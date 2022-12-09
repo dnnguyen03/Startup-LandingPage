@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  background-color: transparent;
+}
+.navBar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  max-width: 1350px;
+}
+.links {
+  display: flex;
+  text-transform: capitalize;
+  gap: 0 3rem;
+}
+.link {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 0.05rem;
+}
+.btn-iconBar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.btn {
+  cursor: pointer;
+  padding: 0.75rem 1.8rem;
+  border-radius: 2rem;
+  border: 1px solid white;
+  text-transform: capitalize;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  color: #1f3e76;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 50%) 0px 12px 24px -10px;
+}
+.fa-bars {
+  display: none;
+  font-size: 18px;
+  color: white;
+}
+.overlay-sideBar {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all ease;
+}
+.activeSideBar {
+  opacity: 1;
+  visibility: visible;
+}
+.activeSideBar .sideBar {
+  transform: translateX(0);
+}
+.icon-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 25px;
+}
+.sideBar {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 320px;
+  background-color: white;
+  padding: 100px 30px 20px;
+  transform: translateX(-100%);
+  transition: 0.3s all ease;
+}
+.link-mobile {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #343d48;
+  font-weight: 500;
+  line-height: 1.8;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(232, 229, 229);
+}
+@media screen and (max-width: 1024px) {
+  .navBar {
+    justify-content: space-around;
+  }
+  .links {
+    display: none;
+  }
+  .btn {
+    padding: 0.6rem 1rem;
+  }
+  .fa-bars {
+    display: block;
+  }
+}

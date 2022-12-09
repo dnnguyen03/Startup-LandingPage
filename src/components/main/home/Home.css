@@ -1,0 +1,105 @@
+#home {
+  background-color: #1f3e76;
+  display: grid;
+  place-items: center;
+  background-image: url(./img/background.png);
+  border-bottom-right-radius: 250px;
+  overflow: hidden;
+  padding: 0;
+}
+.container {
+  padding-top: 150px;
+  max-width: 1250px;
+  display: flex;
+  color: white;
+}
+.imgPhone {
+  margin-left: -280px;
+  margin-right: -290px;
+  margin-top: -20px;
+  width: 100%;
+}
+.imgPhone img {
+  height: auto;
+  /* width: 100%; */
+}
+.title h1 {
+  font-size: 78px;
+  font-weight: 700;
+}
+#home .text p {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 2.2;
+  padding-right: 125px;
+  margin-bottom: 50px;
+  color: white;
+}
+.action {
+  display: flex;
+}
+.action .btn {
+  color: #1f3e76;
+  font-size: 16px;
+  background-color: white;
+}
+.action .video {
+  gap: 0.6rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.action .video:hover {
+  box-shadow: none;
+}
+.action .video i {
+  font-size: 25px;
+}
+.orther {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+  text-transform: capitalize;
+  padding-bottom: 170px;
+  color: #ffffff;
+}
+.sponsoreds {
+  display: flex;
+  gap: 0 2rem;
+}
+@media screen and (min-width: 1220px) and (max-width: 1600px) {
+  .title h1 {
+    font-size: 66px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .title h1 {
+    font-size: 60px;
+  }
+  #home .text p {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .title h1 {
+    font-size: 52px;
+  }
+  .navBar {
+    max-width: 1020px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .container {
+    max-width: 1020px;
+  }
+  .information {
+    width: 55%;
+  }
+  .imgPhone {
+    width: 100%;
+  }
+}
