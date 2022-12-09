@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Startup-LandingPage/static/css/main.98842685.css",
+    "main.js": "/Startup-LandingPage/static/js/main.8583dc09.js",
+    "static/js/787.d07b30b9.chunk.js": "/Startup-LandingPage/static/js/787.d07b30b9.chunk.js",
+    "static/media/phone.png": "/Startup-LandingPage/static/media/phone.72e48c1640c22543208d.png",
+    "static/media/phone-section2.png": "/Startup-LandingPage/static/media/phone-section2.69eb30579f496864b423.png",
+    "static/media/image-section4.png": "/Startup-LandingPage/static/media/image-section4.e6e444dc50c6acbf17cf.png",
+    "static/media/background.png": "/Startup-LandingPage/static/media/background.988eac7facf3a93a1a56.png",
+    "static/media/logo_white.svg": "/Startup-LandingPage/static/media/logo_white.6e3e1733c9848af1451ca7a74a3d6dc5.svg",
+    "static/media/google.svg": "/Startup-LandingPage/static/media/google.d0ba902fdc3e9fa68ea60c94054f48e5.svg",
+    "static/media/img1-section3.svg": "/Startup-LandingPage/static/media/img1-section3.d87d7c63bde29e936adb9052a03de003.svg",
+    "static/media/paypal.svg": "/Startup-LandingPage/static/media/paypal.c3d3f1cc6033d982e7e3400cfc0341a7.svg",
+    "static/media/img4-section3.svg": "/Startup-LandingPage/static/media/img4-section3.dcb4d6c29dbce681a5b30302a20af1c3.svg",
+    "static/media/img3.svg": "/Startup-LandingPage/static/media/img3.a3d0a0ac3791edcd539db2a3725b9e70.svg",
+    "static/media/img2.svg": "/Startup-LandingPage/static/media/img2.251a18f1f9595d002b5300767e8af72e.svg",
+    "static/media/dropbox.svg": "/Startup-LandingPage/static/media/dropbox.d0c2c3a652221d0d78aa4febc4b349d5.svg",
+    "static/media/img3-section3.svg": "/Startup-LandingPage/static/media/img3-section3.90e2080565f87c103e45615c36a02736.svg",
+    "static/media/img2-section3.svg": "/Startup-LandingPage/static/media/img2-section3.db4ff25a6d809730ce609dae522a3e8b.svg",
+    "static/media/img6-section3.svg": "/Startup-LandingPage/static/media/img6-section3.26a0ca7c72092e7ace6e3e8c958ae9a2.svg",
+    "static/media/img1.svg": "/Startup-LandingPage/static/media/img1.609b36e48550a44d80b8790e8306a800.svg",
+    "static/media/img5-section3.svg": "/Startup-LandingPage/static/media/img5-section3.f54a67a387c7e59bbad2300f689b500d.svg",
+    "static/media/img1-section2.svg": "/Startup-LandingPage/static/media/img1-section2.82290270c2c456c7520fe868f4ee6ca6.svg",
+    "static/media/img2-section2.svg": "/Startup-LandingPage/static/media/img2-section2.be3d4834ee46737bef2f98afaff5c222.svg",
+    "index.html": "/Startup-LandingPage/index.html",
+    "main.98842685.css.map": "/Startup-LandingPage/static/css/main.98842685.css.map",
+    "main.8583dc09.js.map": "/Startup-LandingPage/static/js/main.8583dc09.js.map",
+    "787.d07b30b9.chunk.js.map": "/Startup-LandingPage/static/js/787.d07b30b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98842685.css",
+    "static/js/main.8583dc09.js"
+  ]
+}
