@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Startup-LandingPage/static/css/main.98842685.css",
+    "main.css": "/Startup-LandingPage/static/css/main.33cf24a8.css",
     "main.js": "/Startup-LandingPage/static/js/main.8583dc09.js",
     "static/js/787.d07b30b9.chunk.js": "/Startup-LandingPage/static/js/787.d07b30b9.chunk.js",
     "static/media/phone.png": "/Startup-LandingPage/static/media/phone.72e48c1640c22543208d.png",
@@ -23,12 +23,12 @@
     "static/media/img1-section2.svg": "/Startup-LandingPage/static/media/img1-section2.82290270c2c456c7520fe868f4ee6ca6.svg",
     "static/media/img2-section2.svg": "/Startup-LandingPage/static/media/img2-section2.be3d4834ee46737bef2f98afaff5c222.svg",
     "index.html": "/Startup-LandingPage/index.html",
-    "main.98842685.css.map": "/Startup-LandingPage/static/css/main.98842685.css.map",
+    "main.33cf24a8.css.map": "/Startup-LandingPage/static/css/main.33cf24a8.css.map",
     "main.8583dc09.js.map": "/Startup-LandingPage/static/js/main.8583dc09.js.map",
     "787.d07b30b9.chunk.js.map": "/Startup-LandingPage/static/js/787.d07b30b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98842685.css",
+    "static/css/main.33cf24a8.css",
     "static/js/main.8583dc09.js"
   ]
 }
