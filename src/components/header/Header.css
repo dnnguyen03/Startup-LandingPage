@@ -6,20 +6,24 @@
   text-decoration: none;
 }
 .header {
-  width: 100vw;
+  width: 100%;
   display: grid;
   place-items: center;
-  position: fixed;
+  position: absolute;
   padding: 20px 50px;
   background-color: transparent;
+  transition: all 0.3s linear;
 }
 .navBar {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-
-  max-width: 1350px;
+  max-width: 1250px;
+}
+.logo img {
+  width: 100%;
+  object-fit: cover;
 }
 .links {
   display: flex;
@@ -46,12 +50,12 @@
   color: white;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.05rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s linear;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.25s ease;
 }
 .btn:hover {
   color: #1f3e76;
@@ -62,6 +66,7 @@
   display: none;
   font-size: 18px;
   color: white;
+  cursor: pointer;
 }
 .overlay-sideBar {
   height: 100vh;
@@ -85,6 +90,7 @@
   top: 1.5rem;
   right: 2.5rem;
   font-size: 25px;
+  cursor: pointer;
 }
 .sideBar {
   position: absolute;
@@ -105,17 +111,25 @@
   padding: 1rem 0;
   border-bottom: 1px solid rgb(232, 229, 229);
 }
-/* @media screen and (max-width: 1025px) {
-  .navBar {
-    justify-content: space-around;
-  }
-  .links {
-    display: none;
-  }
-  .btn {
-    padding: 0.6rem 1rem;
-  }
-  .fa-bars {
-    display: block;
-  }
-} */
+.navActive {
+  background-color: white;
+  position: fixed;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%);
+}
+.navActive .btn {
+  background-color: white;
+  color: #1f3e76;
+  border-color: #1f3e76;
+}
+.navActive .btn:hover {
+  background-color: #1f3e76;
+  color: white;
+}
+.navActive .link {
+  color: black;
+}
+.navActive .fa-bars {
+  color: #1f3e76;
+}

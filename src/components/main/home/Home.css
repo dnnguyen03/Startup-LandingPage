@@ -74,28 +74,11 @@
   gap: 0 2rem;
 }
 .information img {
-  /* height: auto; */
   width: 100%;
 }
 @media screen and (min-width: 1220px) and (max-width: 1600px) {
   .title h1 {
     font-size: 66px;
-  }
-}
-@media screen and (max-width: 1360px) {
-  .title h1 {
-    font-size: 60px;
-  }
-  #home .text p {
-    font-size: 18px;
-  }
-  .imgPhone {
-    margin-left: -150px;
-    margin-right: -180px;
-    margin-bottom: -70px;
-  }
-  .imgPhone img {
-    max-width: 100%;
   }
 }
 @media screen and (max-width: 1320px) {
@@ -135,14 +118,14 @@
     margin-bottom: 40px;
   }
   .information {
-    width: 50%;
+    width: 65%;
   }
   .orther {
     margin-top: 35px;
   }
   .imgPhone {
-    margin-left: -122px;
-    margin-right: -50px;
+    margin-left: -37px;
+    margin-right: -154px;
     margin-top: 20px;
     margin-bottom: -45px;
     overflow: hidden;
@@ -164,7 +147,7 @@
   }
   .navBar {
     max-width: 780px;
-    padding: 0 30px;
+    padding: 0 25px;
   }
   .links {
     display: none;
@@ -190,6 +173,9 @@
     margin-left: -124px;
     margin-right: -149px;
     margin-top: 40px;
+  }
+  .imgPhone img {
+    width: 100%;
   }
   .information {
     width: 70%;
@@ -233,5 +219,49 @@
   }
   #home .text p {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  .title h1 {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #home {
+    border-bottom-right-radius: 100px;
+  }
+  .orther {
+    text-align: left;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .orther p {
+    width: 100%;
+  }
+  .title h1 {
+    font-size: 40px;
+  }
+  #home .text p {
+    font-size: 16px;
+  }
+  #home .container {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .logo {
+    padding-right: 20px;
+    margin-right: 10px;
+    width: 50%;
+  }
+  .btn-iconBar {
+    gap: 1rem;
+  }
+  .navBar .btn {
+    display: inline-block;
+    appearance: none;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 10px 14px;
   }
 }
