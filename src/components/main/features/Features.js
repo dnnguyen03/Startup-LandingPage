@@ -1,7 +1,7 @@
 import React from "react";
-import { section1, section2, section3, section5 } from "./data/dataFeatures";
+import { section1, section2, section3, section5 } from "../../../utils/data";
 import "./Features.css";
-import { imageSection2, imageSection4 } from "./img/img";
+import { imageSection2, imageSection4 } from "../../../asset/image/img";
 export default function Features() {
   function Box(props) {
     return (

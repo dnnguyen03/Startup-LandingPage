@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./img/img";
+import { Image } from "../../../asset/image/img";
 import "./Home.css";
 export default function Home() {
   return (

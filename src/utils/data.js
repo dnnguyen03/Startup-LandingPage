@@ -1,4 +1,14 @@
-import { imageSection1, imageSection2, imageSection3 } from "../img/img";
+import {
+  imageSection1,
+  imageSection2,
+  imageSection3,
+} from "../asset/image/img";
+export const links = [
+  { id: 1, name: "home" },
+  { id: 2, name: "features" },
+  { id: 3, name: "testimonial" },
+  { id: 4, name: "pricing" },
+];
 export const section1 = [
   {
     id: 1,

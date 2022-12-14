@@ -1,5 +1,5 @@
 import React from "react";
-import { links } from "../header/data/links";
+import { links } from "../../utils/data";
 
 export default function SideBar({ sideBar, toggleSideBar }) {
   return (

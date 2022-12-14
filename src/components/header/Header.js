@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
-import { links } from "./data/links";
+import { links } from "../../utils/data";
 import "./Header.css";
-import logo from "./img/logo_white.svg";
-import logo1 from "./img/logo_black.svg";
+import logo from "../../asset/image/logo_white.svg";
+import logo1 from "../../asset/image/logo_black.svg";
 import "../sideBar/SideBar";
 import SideBar from "../sideBar/SideBar";
 export default function Header() {

@@ -2,7 +2,7 @@
   background-color: #1f3e76;
   display: grid;
   place-items: center;
-  background-image: url(./img/background.png);
+  background-image: url(../../../asset/image/background.png);
   border-bottom-right-radius: 250px;
   overflow: hidden;
   padding-bottom: 35px;
@@ -42,7 +42,7 @@
   display: flex;
 }
 .action .btn {
-  color: #1f3e76;
+  color: #0f2137;
   font-size: 16px;
   background-color: white;
 }
@@ -75,6 +75,13 @@
 }
 .information img {
   width: 100%;
+}
+.sponsored {
+  display: grid;
+  place-items: center;
+}
+.sponsored:nth-child(3) img {
+  width: 80%;
 }
 @media screen and (min-width: 1220px) and (max-width: 1600px) {
   .title h1 {

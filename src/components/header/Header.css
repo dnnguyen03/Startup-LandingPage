@@ -50,12 +50,11 @@
   color: white;
   font-size: 16px;
   font-weight: 500;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.25s ease;
 }
 .btn:hover {
   color: #1f3e76;
@@ -119,7 +118,6 @@
   box-shadow: 0 1px 2px rgb(0 0 0 / 6%);
 }
 .navActive .btn {
-  background-color: white;
   color: #1f3e76;
   border-color: #1f3e76;
 }

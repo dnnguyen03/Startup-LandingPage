@@ -19,3 +19,9 @@ export const imageSection3 = {
 export const imageSection4 = {
   img: require("./image-section4.png"),
 };
+export const Image = {
+  phone: require("./phone.png"),
+  paypal: require("./paypal.svg").default,
+  google: require("./google.svg").default,
+  dropbox: require("./dropbox.svg").default,
+};
