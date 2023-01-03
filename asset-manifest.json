@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/Startup-LandingPage/static/css/main.25651f63.css",
-    "main.js": "/Startup-LandingPage/static/js/main.8b2793fe.js",
+    "main.css": "/Startup-LandingPage/static/css/main.0fc3ceac.css",
+    "main.js": "/Startup-LandingPage/static/js/main.c6e90235.js",
     "static/js/787.d07b30b9.chunk.js": "/Startup-LandingPage/static/js/787.d07b30b9.chunk.js",
+    "static/media/payment-section7.png": "/Startup-LandingPage/static/media/payment-section7.059b36c0167c943e5357.png",
     "static/media/phone.png": "/Startup-LandingPage/static/media/phone.72e48c1640c22543208d.png",
     "static/media/phone-section2.png": "/Startup-LandingPage/static/media/phone-section2.69eb30579f496864b423.png",
     "static/media/image-section4.png": "/Startup-LandingPage/static/media/image-section4.e6e444dc50c6acbf17cf.png",
     "static/media/background.png": "/Startup-LandingPage/static/media/background.988eac7facf3a93a1a56.png",
     "static/media/logo_black.svg": "/Startup-LandingPage/static/media/logo_black.736b982ecded306a326917597227527b.svg",
     "static/media/logo_white.svg": "/Startup-LandingPage/static/media/logo_white.6e3e1733c9848af1451ca7a74a3d6dc5.svg",
+    "static/media/background-payment.jfif": "/Startup-LandingPage/static/media/background-payment.135c90d3e4f19d4c8722.jfif",
     "static/media/google.svg": "/Startup-LandingPage/static/media/google.d0ba902fdc3e9fa68ea60c94054f48e5.svg",
     "static/media/img1-section3.svg": "/Startup-LandingPage/static/media/img1-section3.d87d7c63bde29e936adb9052a03de003.svg",
     "static/media/paypal.svg": "/Startup-LandingPage/static/media/paypal.c3d3f1cc6033d982e7e3400cfc0341a7.svg",
@@ -24,12 +26,12 @@
     "static/media/img1-section2.svg": "/Startup-LandingPage/static/media/img1-section2.82290270c2c456c7520fe868f4ee6ca6.svg",
     "static/media/img2-section2.svg": "/Startup-LandingPage/static/media/img2-section2.be3d4834ee46737bef2f98afaff5c222.svg",
     "index.html": "/Startup-LandingPage/index.html",
-    "main.25651f63.css.map": "/Startup-LandingPage/static/css/main.25651f63.css.map",
-    "main.8b2793fe.js.map": "/Startup-LandingPage/static/js/main.8b2793fe.js.map",
+    "main.0fc3ceac.css.map": "/Startup-LandingPage/static/css/main.0fc3ceac.css.map",
+    "main.c6e90235.js.map": "/Startup-LandingPage/static/js/main.c6e90235.js.map",
     "787.d07b30b9.chunk.js.map": "/Startup-LandingPage/static/js/787.d07b30b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25651f63.css",
-    "static/js/main.8b2793fe.js"
+    "static/css/main.0fc3ceac.css",
+    "static/js/main.c6e90235.js"
   ]
 }
