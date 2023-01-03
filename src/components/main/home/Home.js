@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Image } from "../../../asset/image/img";
 import "./Home.css";
 export default function Home() {
+  const [video, setVideo] = useState(false);
+  const toggleVideo = () => {
+    setVideo(!video);
+  };
   return (
     <section id="home">
       <div className="container">
@@ -18,9 +22,24 @@ export default function Home() {
           </div>
           <div className="action">
             <button className="btn">get started</button>
-            <div className="video btn">
+            <div className="video btn" onClick={toggleVideo}>
               <i className="fa-solid fa-circle-play"></i>
               <p>watch video</p>
+            </div>
+            <div
+              className={`videoYoutube ${video ? "showVideo" : ""}`}
+              onClick={toggleVideo}
+            >
+              <div className="icon-close" onClick={toggleVideo}>
+                <i className="fa-solid fa-close"></i>
+              </div>
+              {video && (
+                <iframe
+                  src="https://www.youtube.com/embed/8gL4sCu2ES4?autoplay=1&mute=1"
+                  title="YouTube video"
+                  allowFullScreen
+                ></iframe>
+              )}
             </div>
           </div>
           <div className="orther">

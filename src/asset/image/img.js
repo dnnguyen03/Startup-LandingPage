@@ -25,3 +25,9 @@ export const Image = {
   google: require("./google.svg").default,
   dropbox: require("./dropbox.svg").default,
 };
+export const imgSlider = {
+  person1: require("./person1.png"),
+  person2: require("./person2.png"),
+  person3: require("./person3.png"),
+  person4: require("./person4.png"),
+};

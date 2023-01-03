@@ -1,0 +1,234 @@
+.testimonial {
+  padding: 100px 0;
+  text-align: center;
+}
+.testimonial .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 75px;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.slide .yellow svg {
+  color: #f6c416;
+}
+.slide svg {
+  color: rgb(221, 221, 221);
+}
+.slider .job {
+  color: #343d48;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.slider .twitter {
+  color: rgb(37, 160, 255);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.slider .name {
+  font-size: 16px;
+  color: #343d48;
+  margin: 3px;
+}
+.listStar {
+  display: flex;
+}
+.slider {
+  display: flex;
+  text-align: left;
+  transition: all 0.3s linear;
+}
+.slide {
+  padding: 35px 30px 40px 40px;
+  min-width: 393px;
+  box-shadow: rgb(38 78 118 / 35%) 0px 0px 1px;
+  transition: all 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.slide:hover {
+  box-shadow: rgb(38 78 118 / 10%) 0px 6px 47px;
+}
+.inforPerson {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 33px;
+}
+.control_slide button {
+  color: rgb(187, 199, 215);
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  transition: all 0.25s linear;
+  cursor: pointer;
+  margin: 20px 10px 0 0;
+  transition: all 0.25s ease;
+}
+.control_slide button:hover {
+  color: #343d48;
+}
+/* ------------Payment----------- */
+.Payment {
+  overflow: hidden;
+}
+.Payment .container {
+  margin: 0 auto;
+  position: relative;
+  padding-top: 0;
+}
+.imgPayment {
+  padding-top: 120px;
+  padding-right: 100px;
+}
+.Payment img {
+  width: 100%;
+}
+.Payment .infor-payment {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+.infor-payment {
+  padding-right: 0;
+}
+.background {
+  position: absolute;
+  background-image: url(../../../asset/image/background-payment.jfif);
+  background-repeat: no-repeat;
+  width: calc(50vw + 625px);
+  height: 99%;
+  z-index: -1;
+}
+.Payment .btn {
+  background-color: #1f3e76;
+  color: white;
+  border: none;
+}
+@media screen and (max-width: 1220px) {
+  .testimonial .container {
+    max-width: 1000px;
+  }
+  .slide {
+    padding: 30px 30px 35px;
+    margin: 30px 20px 40px;
+    min-width: 293px;
+  }
+  .slider .job {
+    margin-bottom: 22px;
+    letter-spacing: -0.5px;
+  }
+  .Payment .container {
+    max-width: 950px;
+  }
+  .Payment .infor-payment h2 {
+    font-size: 36px;
+  }
+  .background {
+    width: calc(50vw + 480px);
+  }
+  .imgPayment {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+  }
+  .imgPayment img {
+    width: 95%;
+  }
+  .Payment .infor-payment {
+    padding-top: 150px;
+    padding-bottom: 0;
+  }
+  .Payment .text {
+    line-height: 2;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .testimonial .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 35px 30px 40px 40px;
+    margin: 28px 15px 30px;
+    min-width: 345px;
+  }
+  .Payment .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .infor-payment {
+    width: 700px;
+    padding: 120px 20px 100px 40px !important;
+  }
+  .Payment .text {
+    text-align: left;
+  }
+  .imgPayment {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonial .container {
+    max-width: 720px;
+  }
+  .slide {
+    padding: 30px 20px 35px;
+    margin: 28px 15px 30px;
+    min-width: calc(97vw / 2 - 20px);
+  }
+  .slider .job {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .inforPerson {
+    margin-top: 25px;
+  }
+
+  .Payment .container {
+    flex-direction: column-reverse;
+  }
+  .Payment .btn {
+    margin: 0 auto;
+  }
+  .Payment .text {
+    font-size: 16px;
+    line-height: 1.85;
+    text-align: center;
+  }
+  .imgPayment {
+    padding-top: 0;
+  }
+  .infor-payment {
+    text-align: center;
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 620px) {
+  .testimonial .container {
+    max-width: 95%;
+  }
+  .slide {
+    padding: 30px 25px 35px;
+    margin: 28px 20px 30px;
+    min-width: calc(91.4vw - 20px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .slide {
+    min-width: calc(90vw - 20px);
+  }
+  .infor-payment {
+    text-align: center;
+    width: 100%;
+  }
+  .Payment .text {
+    font-size: 15px;
+  }
+}

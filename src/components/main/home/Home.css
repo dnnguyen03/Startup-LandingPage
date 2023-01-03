@@ -83,6 +83,31 @@
 .sponsored:nth-child(3) img {
   width: 80%;
 }
+.videoYoutube {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.showVideo {
+  display: flex;
+}
+.videoYoutube .icon-close {
+  position: unset;
+  margin-top: -550px;
+}
+.videoYoutube iframe {
+  max-width: 880px;
+  height: 510px;
+  width: 80%;
+  border: none;
+}
 @media screen and (min-width: 1220px) and (max-width: 1600px) {
   .title h1 {
     font-size: 66px;
@@ -226,6 +251,9 @@
   }
   #home .text p {
     font-size: 20px;
+  }
+  .videoYoutube iframe {
+    width: 92%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 640px) {
