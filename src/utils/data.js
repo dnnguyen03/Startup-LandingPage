@@ -214,3 +214,69 @@ export const dataSlider = [
     twitter: "@denny.hil",
   },
 ];
+export const dataPricing = [
+  {
+    id: 1,
+    backgroundColor: "#2F5392",
+    suggest: false,
+    textColor: "white",
+    namePackage: "Free Plan",
+    price: false,
+    object: "For Small teams or office",
+    benefits: [
+      {
+        active: true,
+        detail: "Ultimate access to all course, exercises and assessments",
+      },
+      {
+        active: true,
+        detail:
+          "Free access for all kind of exercise corrections with downloads.",
+      },
+      {
+        active: true,
+        detail: "Total assessment corrections with free download access system",
+      },
+      {
+        active: false,
+        detail: "Unlimited download of courses on the mobile app contents",
+      },
+      {
+        active: false,
+        detail: "Download and print courses and exercises in PDF",
+      },
+    ],
+  },
+  {
+    id: 2,
+    backgroundColor: "white",
+    suggest: true,
+    textColor: "#343D48",
+    namePackage: "Premium",
+    object: "For startup enterprise",
+    price: "$29.99/mo",
+    benefits: [
+      {
+        active: true,
+        detail: "Ultimate access to all course, exercises and assessments",
+      },
+      {
+        active: true,
+        detail:
+          "Free access for all kind of exercise corrections with downloads.",
+      },
+      {
+        active: true,
+        detail: "Total assessment corrections with free download access system",
+      },
+      {
+        active: true,
+        detail: "Unlimited download of courses on the mobile app contents",
+      },
+      {
+        active: true,
+        detail: "Download and print courses and exercises in PDF",
+      },
+    ],
+  },
+];

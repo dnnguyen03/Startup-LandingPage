@@ -2,7 +2,7 @@
 .section3 {
   padding: 120px 0;
 }
-.section1 .title {
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,9 +106,6 @@ h2 {
   max-width: 1250px;
   margin: 0 auto;
 }
-.section3 .title {
-  text-align: center;
-}
 .section3 .boxs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -161,14 +158,16 @@ h2 {
   background-size: cover;
   text-align: center;
 }
-.section5 .textUpCase {
+.section5 .textUpCase,
+.Pricing .textUpCase {
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
   opacity: 0.5;
 }
-.section5 h2 {
+.section5 h2,
+.Pricing h2 {
   color: white;
   font-size: 36px;
   line-height: 1.2;
@@ -212,8 +211,7 @@ h2 {
   .section1 .box {
     padding: 0 30px;
   }
-  .section1 h2,
-  .section3 h2 {
+  h2 {
     font-size: 32px;
   }
   .section2 {
@@ -379,10 +377,7 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
-  h2,
-  .section2 h2,
-  .section4 h2,
-  .Payment h2 {
+  h2 {
     font-size: 28px !important;
   }
   .section1 .box {
@@ -398,11 +393,15 @@ h2 {
   .section2 {
     flex-direction: column-reverse;
   }
-  .section2 .textUpCase,
-  .section2 .title {
+  .section2 h2 {
+    font-size: 28px !important;
     text-align: center;
   }
-  .infor-section2 .infor-payment {
+  .section2 .textUpCase {
+    text-align: center;
+  }
+  .infor-section2,
+  .infor-payment {
     padding-right: 0;
     max-width: 550px;
     padding-bottom: 35px;
@@ -501,7 +500,12 @@ h2 {
   .section2 {
     padding: 0 20px;
   }
-  .infor-section2 .infor-payment {
+  .infor-section2 {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 45px;
+  }
+  .infor-payment {
     max-width: 100%;
   }
   .section2 .box {
@@ -511,7 +515,7 @@ h2 {
     width: 50px;
   }
   .section3 {
-    padding: 100px 20px;
+    padding: 80px 20px;
   }
   .section3 .boxs {
     grid-template-columns: repeat(1, 1fr);
@@ -526,7 +530,7 @@ h2 {
     line-height: 1.85;
   }
   .section4 {
-    padding: 10px 20px 100px 20px;
+    padding: 10px 20px 80px 20px;
   }
   .img-section4 {
     max-width: 100%;
@@ -554,5 +558,11 @@ h2 {
   }
   .section5 .text {
     font-size: 15px;
+  }
+  .content .number {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 24px;
   }
 }

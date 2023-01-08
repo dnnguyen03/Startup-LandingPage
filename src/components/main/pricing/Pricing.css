@@ -1,0 +1,154 @@
+.Pricing {
+  padding: 120px 0;
+  background-image: url(../../../asset/image/background-pricing.png);
+  background-color: #1f3e76;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.hidden {
+  visibility: hidden;
+}
+.activeBenefit {
+  color: #25cb9e;
+}
+.noBenefit {
+  opacity: 50%;
+}
+.Pricing .container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 75px;
+}
+.packages {
+  position: relative;
+  border-radius: 10px;
+  padding: 62px 70px 50px 40px;
+  flex-basis: 38.5%;
+}
+.suggest {
+  height: 32px;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  margin-top: -42px;
+  padding: 0 10px;
+  background-color: #ef9e48;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 5px;
+  color: white;
+}
+.namePK {
+  font-size: 22px;
+  line-height: 23px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.benefit {
+  display: flex;
+  margin-bottom: 22px;
+  padding-right: 30px;
+  line-height: 1.65;
+}
+.activeBenefit svg {
+  font-size: 22px;
+  margin-top: 1.5px;
+  margin-right: 14px;
+}
+.price-month p {
+  padding-bottom: 10px;
+}
+.price-month .price {
+  color: #25cb9e;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  text-align: right;
+}
+.packages .btn {
+  margin: 0 auto;
+  margin-top: 70px;
+}
+@media screen and (max-width: 1366px) {
+  .Pricing .container {
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .packages {
+    flex-basis: 40%;
+  }
+  .packages .benefit {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .Pricing .container {
+    max-width: 768px;
+  }
+  .packages {
+    flex-basis: 50%;
+    padding: 62px 25px 50px 25px;
+  }
+  .packages .detail {
+    font-size: 15px;
+  }
+  .packages .benefit {
+    padding-right: 10px;
+  }
+  .price-month .price {
+    font-size: 22px;
+  }
+  .packages .btn {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Pricing .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .packages {
+    max-width: 380px;
+    padding: 50px 15px 50px;
+  }
+  .namePK {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .name-price {
+    margin-bottom: 35px;
+  }
+  .activeBenefit svg {
+    font-size: 16px;
+  }
+  .suggest {
+    height: 28px;
+    margin-top: -36px;
+  }
+  .price-month .price {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+  .price-month p {
+    font-size: 15px;
+  }
+  .price-month {
+    margin-top: -3px;
+  }
+}

@@ -1,6 +1,6 @@
 import Payment from "./Payment";
 import Slider from "./Slider";
-import "./testimonial.css";
+import "./Testimonial.css";
 
 export default function Testimonial() {
   return (

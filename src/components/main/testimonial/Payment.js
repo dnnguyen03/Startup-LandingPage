@@ -1,6 +1,5 @@
 import React from "react";
 import payment from "../../../asset/image/payment-section7.png";
-import background from "../../../asset/image/background-payment.jfif";
 export default function Payment() {
   return (
     <div className="Payment">
