@@ -532,6 +532,9 @@ h2 {
   .section4 {
     padding: 10px 20px 80px 20px;
   }
+  .section4 .infor-section4 {
+    width: 100%;
+  }
   .img-section4 {
     max-width: 100%;
   }
