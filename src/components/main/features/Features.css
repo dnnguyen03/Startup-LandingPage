@@ -523,6 +523,7 @@ h2 {
   .section2 h2,
   .section4 h2,
   .Payment h2 {
+    text-align: center;
     font-size: 24px !important;
   }
   .section2 {
