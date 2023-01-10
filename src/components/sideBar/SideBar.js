@@ -1,5 +1,6 @@
 import React from "react";
-import { links } from "../../utils/data";
+import { Link } from "react-scroll";
+import { links, socialMedia } from "../../utils/data";
 
 export default function SideBar({ sideBar, toggleSideBar }) {
   return (
@@ -14,11 +15,24 @@ export default function SideBar({ sideBar, toggleSideBar }) {
         <div className="links-mobile">
           {links.map((link) => {
             return (
-              <li className="link-mobile" key={link.id}>
-                {link.name}
-              </li>
+              <Link
+                key={link.id}
+                activeClass="active"
+                smooth
+                spy
+                to={link.name}
+              >
+                <li className="link-mobile">{link.name}</li>
+              </Link>
             );
           })}
+        </div>
+        <div className="social-media">
+          {socialMedia.map((item) => (
+            <a key={item.id} href={item.href} target="_blank" rel="noreferrer">
+              {item.icon}
+            </a>
+          ))}
         </div>
       </div>
     </aside>

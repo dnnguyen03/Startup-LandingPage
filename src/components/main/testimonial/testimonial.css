@@ -3,6 +3,7 @@
   text-align: center;
 }
 .testimonial .container {
+  position: relative;
   max-width: 1300px;
   margin: 0 auto;
   margin-top: 75px;
@@ -40,18 +41,44 @@
   display: flex;
 }
 .slider {
-  display: flex;
   text-align: left;
   transition: all 0.3s linear;
+  position: relative;
 }
 .slide {
+  position: absolute;
   padding: 35px 30px 40px 40px;
-  min-width: 393px;
+  width: calc(91% / 3);
   box-shadow: rgb(38 78 118 / 35%) 0px 0px 1px;
-  transition: all 0.3s linear;
   display: flex;
   flex-direction: column;
   margin: 20px;
+  transition: all 0.3s linear;
+  margin-left: calc(100% + 20px);
+}
+.slide:nth-child(1) {
+  margin-left: calc(-100%) !important;
+}
+.slide:nth-child(2) {
+  margin-left: calc(-100% / 3 * 2) !important;
+}
+.slide:nth-child(3) {
+  margin-left: calc(-100% / 3) !important;
+}
+.slide:nth-child(4) {
+  margin-left: 20px;
+}
+.slide:nth-child(5) {
+  margin-left: calc(100% / 3 + 20px);
+}
+.slide:nth-child(6) {
+  margin-left: calc(100% / 3 * 2 + 20px);
+}
+.slide:nth-child(8) {
+  margin-left: calc(100% + 20px * 2);
+}
+.slide:nth-child(9) {
+  margin-left: calc(100% + 20px * 3);
 }
 .slide:hover {
   box-shadow: rgb(38 78 118 / 10%) 0px 6px 47px;
@@ -68,7 +95,7 @@
   font-size: 40px;
   transition: all 0.25s linear;
   cursor: pointer;
-  margin: 20px 10px 0 0;
+  margin: 450px 10px 0 0;
   transition: all 0.25s ease;
 }
 .control_slide button:hover {
@@ -115,9 +142,22 @@
     max-width: 1000px;
   }
   .slide {
+    width: calc(91% / 2);
     padding: 30px 30px 35px;
-    margin: 30px 20px 40px;
-    min-width: 293px;
+  }
+  .slide:nth-child(1),
+  .slide:nth-child(2),
+  .slide:nth-child(3) {
+    margin-left: calc(-100% / 2) !important;
+  }
+  .slide:nth-child(4) {
+    margin-left: 20px;
+  }
+  .slide:nth-child(5) {
+    margin-left: calc(100% / 2 + 20px) !important;
+  }
+  .slide:nth-child(6) {
+    margin-left: calc(100% + 20px) !important;
   }
   .slider .job {
     margin-bottom: 22px;
@@ -155,8 +195,6 @@
   }
   .slide {
     padding: 35px 30px 40px 40px;
-    margin: 28px 15px 30px;
-    min-width: 345px;
   }
   .Payment .container {
     max-width: 100%;
@@ -177,11 +215,6 @@
   .testimonial .container {
     max-width: 720px;
   }
-  .slide {
-    padding: 30px 20px 35px;
-    margin: 28px 15px 30px;
-    min-width: calc(97vw / 2 - 20px);
-  }
   .slider .job {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -189,7 +222,6 @@
   .inforPerson {
     margin-top: 25px;
   }
-
   .Payment .container {
     flex-direction: column-reverse;
   }
@@ -210,14 +242,24 @@
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
   .testimonial .container {
     max-width: 95%;
   }
   .slide {
-    padding: 30px 25px 35px;
-    margin: 28px 20px 30px;
-    min-width: calc(91.4vw - 20px);
+    width: 95%;
+  }
+  .slide:nth-child(1),
+  .slide:nth-child(2),
+  .slide:nth-child(3) {
+    margin-left: -100% !important;
+  }
+  .slide:nth-child(4) {
+    margin-left: 15px;
+  }
+  .slide:nth-child(6),
+  .slide:nth-child(5) {
+    margin-left: calc(100% + 20px) !important;
   }
 }
 @media screen and (max-width: 480px) {
@@ -228,11 +270,13 @@
     margin-top: 20px;
   }
   .slide {
-    min-width: calc(90vw - 20px);
     font-size: 15px;
   }
+  .slide:nth-child(4) {
+    margin-left: 8px;
+  }
   .control_slide button {
-    margin: 0 5px;
+    margin: 400px 5px 0;
   }
   .infor-payment {
     text-align: center;

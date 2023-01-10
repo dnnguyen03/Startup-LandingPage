@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
+import { Link } from "react-scroll";
 import { links } from "../../utils/data";
 import "./Header.css";
 import logo from "../../asset/image/logo_white.svg";
@@ -22,7 +23,8 @@ export default function Header() {
     });
   });
   const [sideBar, setSideBar] = useState(false);
-  const toggleSideBar = () => {
+  const toggleSideBar = (e) => {
+    e.stopPropagation();
     setSideBar(!sideBar);
   };
   return (
@@ -35,7 +37,9 @@ export default function Header() {
           {links.map((link) => {
             return (
               <li className="link" key={link.id}>
-                {link.name}
+                <Link activeClass="active" smooth spy to={link.name}>
+                  {link.name}
+                </Link>
               </li>
             );
           })}

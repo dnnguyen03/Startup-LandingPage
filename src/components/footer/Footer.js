@@ -22,7 +22,10 @@ export default function Footer() {
         ))}
       </div>
       <div className="author">
-        All right reserved - Design & Developed byRedQ, Inc
+        All right reserved - Design & Developed by
+        <a href="https://redq.io/" target={"_blank"} rel="noreferrer">
+          RedQ, Inc
+        </a>
       </div>
     </footer>
   );

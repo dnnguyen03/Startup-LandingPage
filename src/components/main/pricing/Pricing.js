@@ -77,7 +77,7 @@ const Packages = (props) => {
 export default function Pricing() {
   return (
     <div>
-      <div className="Pricing">
+      <div className="Pricing" id="pricing">
         <div className="title">
           <p className="textUpCase">Whats the function</p>
           <h2>Let’s see how it works</h2>

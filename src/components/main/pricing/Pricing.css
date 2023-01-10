@@ -6,6 +6,7 @@
   background-position: center center;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 .hidden {
   visibility: hidden;

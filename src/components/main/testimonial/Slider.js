@@ -1,93 +1,88 @@
 import React, { useRef } from "react";
 import { dataSlider } from "../../../utils/data";
 import { ReactComponent as Star } from "../../../asset/image/star.svg";
-export default function Slider() {
-  const slide = useRef();
-  const slidePresent = useRef(0);
-  const container = useRef();
-  var mobile = window.matchMedia("(max-width:624px)");
-  var tablet = window.matchMedia("(min-width:625px)");
-  var pc = window.matchMedia("(min-width:1026px)");
-  function Slide(props) {
-    return (
-      <div className="slide">
-        <div className="listStar">
-          <li className={`star ${props.star >= 1 ? "yellow" : ""}`}>
-            <Star></Star>
-          </li>
-          <li className={`star ${props.star >= 2 ? "yellow" : ""}`}>
-            <Star></Star>
-          </li>
-          <li className={`star ${props.star >= 3 ? "yellow" : ""}`}>
-            <Star></Star>
-          </li>
-          <li className={`star ${props.star >= 4 ? "yellow" : ""}`}>
-            <Star></Star>
-          </li>
-          <li className={`star ${props.star === 5 ? "yellow" : ""}`}>
-            <Star></Star>
-          </li>
-        </div>
-        <div className="job">
-          <p>{props.job}</p>
-        </div>
+function Slide(props) {
+  return (
+    <div className="slide">
+      <div className="listStar">
+        <li className={`star ${props.star >= 1 ? "yellow" : ""}`}>
+          <Star></Star>
+        </li>
+        <li className={`star ${props.star >= 2 ? "yellow" : ""}`}>
+          <Star></Star>
+        </li>
+        <li className={`star ${props.star >= 3 ? "yellow" : ""}`}>
+          <Star></Star>
+        </li>
+        <li className={`star ${props.star >= 4 ? "yellow" : ""}`}>
+          <Star></Star>
+        </li>
+        <li className={`star ${props.star === 5 ? "yellow" : ""}`}>
+          <Star></Star>
+        </li>
+      </div>
+      <div className="job">
+        <p>{props.job}</p>
+      </div>
 
-        <div className="text">
-          <p>{props.text}</p>
-        </div>
+      <div className="text">
+        <p>{props.text}</p>
+      </div>
 
-        <div className="inforPerson">
-          <div className="avatar">
-            <img src={props.avatar} alt="" />
-          </div>
-          <div className="name_twitter">
-            <div className="name">{props.name}</div>
-            <div className="twitter">{props.twitter}</div>
-          </div>
+      <div className="inforPerson">
+        <div className="avatar">
+          <img src={props.avatar} alt="" />
+        </div>
+        <div className="name_twitter">
+          <div className="name">{props.name}</div>
+          <div className="twitter">{props.twitter}</div>
         </div>
       </div>
-    );
-  }
-  function BtnSlider() {
-    console.log(slidePresent.current, dataSlider.length);
-    if (pc.matches) {
-      if (slidePresent.current >= dataSlider.length / 3) {
-        slidePresent.current = slidePresent.current - 1;
-      }
-    }
-    if (mobile.matches) {
-      if (slidePresent.current >= dataSlider.length) {
-        slidePresent.current = slidePresent.current - 1;
-      }
-    }
-    if (tablet.matches) {
-      if (slidePresent.current >= dataSlider.length / 2) {
-        slidePresent.current = slidePresent.current - 1;
-      }
-    }
-
-    if (slidePresent.current < 0) {
-      slidePresent.current = 0;
-    } else {
-      slide.current.style.marginLeft = -slidePresent.current * 100 + "%";
-    }
-  }
+    </div>
+  );
+}
+export default function Slider() {
+  const listSlide = useRef();
+  var tablet = window.matchMedia("(min-width:625px)");
+  var pc = window.matchMedia("(min-width:1026px)");
   const next = () => {
-    slidePresent.current++;
-    BtnSlider();
+    if (pc.matches) {
+      let list = document.querySelectorAll(".slider .slide");
+      listSlide.current.appendChild(list[0]);
+      listSlide.current.appendChild(list[1]);
+      listSlide.current.appendChild(list[2]);
+    } else if (tablet.matches) {
+      let list = document.querySelectorAll(".slider .slide");
+      listSlide.current.appendChild(list[0]);
+      listSlide.current.appendChild(list[1]);
+    } else {
+      let list = document.querySelectorAll(".slider .slide");
+      listSlide.current.appendChild(list[0]);
+    }
   };
   const prev = () => {
-    slidePresent.current--;
-    BtnSlider();
+    if (pc.matches) {
+      let list = document.querySelectorAll(".slider .slide");
+      listSlide.current.prepend(list[list.length - 1]);
+      listSlide.current.prepend(list[list.length - 2]);
+      listSlide.current.prepend(list[list.length - 3]);
+    } else if (tablet.matches) {
+      let list = document.querySelectorAll(".slider .slide");
+      listSlide.current.prepend(list[list.length - 1]);
+      listSlide.current.prepend(list[list.length - 2]);
+    } else {
+      let list = document.querySelectorAll(".slider .slide");
+      listSlide.current.prepend(list[list.length - 1]);
+    }
   };
   return (
-    <div className="testimonial">
+    <div className="testimonial" id="testimonial">
       <div className="title">
         <p className="textUpCase">quality features</p>
         <h2>Meet Client Satisfaction</h2>
       </div>
-      <div className="container" ref={container}>
-        <div className="slider" ref={slide}>
+      <div className="container">
+        <div className="slider" ref={listSlide}>
           {dataSlider.map((slide, index) => {
             return (
               <Slide

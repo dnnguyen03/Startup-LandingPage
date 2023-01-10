@@ -26,8 +26,8 @@ export default function Features() {
     );
   }
   return (
-    <section id="features">
-      <section className="section1">
+    <section>
+      <section className="section1" id="features">
         <div className="title">
           <p className="textUpCase">quality features</p>
           <h2>Meet exciting feature of app</h2>

@@ -5,6 +5,7 @@
   margin: 0 auto;
   justify-content: center;
   padding: 80px 20px 20px;
+  overflow: hidden;
 }
 .item {
   display: flex;
@@ -24,10 +25,21 @@
   line-height: 27px;
   margin-bottom: 10px;
 }
+.item a:hover {
+  color: #1f3e76;
+}
+.author a {
+  color: #343d48;
+}
+.author a:hover {
+  color: #1f3e76;
+}
 .author {
   background-color: #fcfdfe;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
   color: #343d48;
   font-size: 15px;
   line-height: 27px;
