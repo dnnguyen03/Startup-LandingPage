@@ -78,7 +78,7 @@ export default function Slider() {
   return (
     <div className="testimonial" id="testimonial">
       <div className="title">
-        <p className="textUpCase">quality features</p>
+        <p className="textUpCase">TESTIMONIAL</p>
         <h2>Meet Client Satisfaction</h2>
       </div>
       <div className="container">
