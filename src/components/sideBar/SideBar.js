@@ -21,6 +21,7 @@ export default function SideBar({ sideBar, toggleSideBar }) {
                 smooth
                 spy
                 to={link.name}
+                onClick={toggleSideBar}
               >
                 <li className="link-mobile">{link.name}</li>
               </Link>
