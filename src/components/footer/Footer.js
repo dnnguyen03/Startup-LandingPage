@@ -10,7 +10,6 @@ export default function Footer() {
           <div className="item" key={index}>
             <h2>{data.item}</h2>
             {data.details.map((item, index) => (
-              // eslint-disable-next-line jsx-a11y/anchor-is-valid
               <a
                 href="https://dnnguyen03.github.io/Startup-LandingPage/"
                 key={index}
