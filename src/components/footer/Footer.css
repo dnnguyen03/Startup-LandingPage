@@ -1,10 +1,14 @@
+.Footer {
+  padding: 0 30px;
+}
 .Footer .inforFooter {
   display: flex;
   flex-wrap: wrap;
   max-width: 1310px;
   margin: 0 auto;
   justify-content: center;
-  padding: 80px 20px 20px;
+  padding: 80px 35px 20px;
+  border-top: 1px solid #e5ecf4;
   overflow: hidden;
 }
 .item {
