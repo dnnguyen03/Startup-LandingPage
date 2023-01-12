@@ -7,8 +7,7 @@ export default function Questions() {
   const Answer = useRef([]);
   useEffect(() => {
     listQuestion.current[0].classList.add("show");
-    listAnswer.current[0].style.height =
-      Answer.current[0].getBoundingClientRect().height + "px";
+    listAnswer.current[0].style.height = Answer.current[0].clientHeight + "px";
   });
   useLayoutEffect(() => {
     listQuestion.current.forEach((question, index) => {
@@ -24,7 +23,7 @@ export default function Questions() {
         question.classList.add("show");
         if (question.classList.contains("show")) {
           listAnswer.current[index].style.height =
-            Answer.current[index].getBoundingClientRect().height + "px";
+            Answer.current[index].clientHeight + "px";
         } else {
           listAnswer.current[index].style.height = 0;
         }
